@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap");
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 95vh;
+  flex-direction: column;
+}
+
+.main {
+  text-align: center;
+  font-family: "Comfortaa", cursive;
+  width: 60%;
+}
+.hidden {
+  display: none;
+}
+.title {
+  font-weight: 400;
+  margin-bottom: 100px;
+}
+
+.h1 {
+  font-weight: 400;
+  margin-bottom: 100px;
+  line-height: 40px;
+  animation: colorChange 7s infinite alternate;
+}
+
+p,
+span {
+  font-size: 24px;
+  display: inline;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(51, 51, 194);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+.flags {
+  margin-top: -60px;
+  margin-bottom: 60px;
+}
+
+.flag {
+  cursor: pointer;
+  width: 30px;
+  transition: transform 500ms;
+}
+
+.flagOn {
+  width: 40px;
+}
+
+.flag:hover {
+  transform: scale(1.2);
+}
+
+.flagOn:hover {
+  transform: scale(1.2);
+}
+
+@keyframes colorChange {
+  0% {
+    color: indigo;
+  }
+  20% {
+    color: blue;
+  }
+  40% {
+    color: green;
+  }
+  60% {
+    color: rgb(204, 126, 139);
+  }
+  80% {
+    color: orangered;
+  }
+  100% {
+    color: yellow;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    width: 300px;
+  }
+
+  h1 {
+    margin-bottom: 100px;
+    line-height: 40px;
+  }
+  .text {
+    width: 280px;
+  }
+
+  .flag:hover {
+    transform: none;
+  }
+
+  .flagOn:hover {
+    transform: none;
+  }
+}
